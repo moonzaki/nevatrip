@@ -1,0 +1,45 @@
+.button {
+    box-sizing: border-box;
+
+    width: 165px;
+    height: 44px;
+
+    @include font_itemText;
+
+    background: #FED74B;
+    border: 0.5px solid #CBA500;
+    border-radius: 20px;
+
+    &:hover {
+        transition: 0.5s;
+        background: #f0c117;
+    }
+
+    @media screen and (min-width: 720px) {
+        width: 187px;
+        height: 52px ;
+        border-radius: 23px;
+    }
+}
+
+.stoke-price-button {
+    box-sizing: border-box;
+
+    width: 193px;
+    height: 44px;
+
+    @include font_itemText;
+
+    background: #FED74B;
+    border: 0.5px solid #CBA500;
+    border-radius: 10px;
+
+    &:hover {
+        transition: 0.5s;
+        background: #f0c117;
+    }
+}
+
+.price-button {
+    padding: 11px 36px 11px 30px;
+}

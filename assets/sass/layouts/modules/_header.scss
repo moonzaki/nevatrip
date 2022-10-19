@@ -1,0 +1,12 @@
+.header {
+    position: relative;
+    z-index: 1;
+    background: $green_bg;
+
+    @media screen and (max-width: 719px) {
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+    }
+}
+
