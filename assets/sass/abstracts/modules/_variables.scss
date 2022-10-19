@@ -1,0 +1,62 @@
+:root {
+    --trueOrFalse: false;
+}
+
+/*! COLORS */
+/*! desktop colors */ 
+
+$yellow: #FFD83C;
+$yellow_stroke: #CBA500;
+$blue_light: #C5DCFF;
+$blue_hover: #6BA6FF;
+
+$gray: #8E8E8E;
+$gray_dark: #9E9E9E;
+$black_blue: #020513;
+$white: #FFFFFF;
+$blue_bright: #099CE8;
+$purple: #7553FF;
+/*! mobile colors change  */
+
+$m_yelow: #FED74B;
+
+$green_bg: rgb(127 143 125);
+$milk_bg: rgb(247 244 235);
+/*! FONTS */
+/*! desktop fonts */
+
+$f_title: 'Open Sans', sans-serif;
+$f_largeTitleSize: 26px;
+$f_mediumTextSize: 18px;
+$f_mediumDateSize: 16px;
+$f_mediumImgSize: 16px;
+$f_smallTextSize: 14px;
+$f_smallTimeSize: 14px;
+$f_largePriceSize: 36px;
+
+
+$f_largeLineHeight: 34px;
+$f_smallLineHeight: 20px;
+
+$f_reg: 400;
+$f_sem: 600;
+
+/*! mobile fonts */
+
+$m_f_largeTitleSize: 14px;
+$m_f_mediumTextSize: 14px;
+$m_f_mediumDateSize: 14px;
+$m_f_mediumImgSize: 12px;
+$m_f_smallTimeSize: 12px;
+$m_f_smallTextSize: 10px;
+$m_f_largePriceSize: 30px;
+
+$m_f_largeLineHeight: 22px;
+$m_f_smallLineHeight: 20px;
+
+
+/*! elements */
+
+$d_type: attr(data-type);
+
+

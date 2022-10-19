@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+
+}
+
+// .body-shadow {
+
+//     &::after {
+//         position: absolute;
+//         content: '';
+//         width: 100vw;
+//         height: 100vh;
+//         top: 0;
+//         background: #0000005e;   
+//     }
+// }

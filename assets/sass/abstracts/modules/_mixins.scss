@@ -1,0 +1,143 @@
+/*! MIXINS FONTS */
+
+@mixin font_itemTitle {
+
+    font-family: $f_title;
+    font-weight: $f_sem;
+    font-size: $m_f_largeTitleSize;
+    line-height: $m_f_largeLineHeight;
+
+    @media screen and (min-width: 1220px){
+        font-weight: $f_reg;
+        font-size: $f_largeTitleSize;
+        line-height: $f_largeLineHeight;
+    }
+}
+
+@mixin font_itemText {
+    font-family: $f_title;
+    font-weight: $f_reg;
+    font-size: $m_f_mediumTextSize;
+    line-height: $m_f_smallLineHeight;
+    
+    @media screen and (min-width: 1220px){
+            font-size: $f_mediumTextSize;
+            line-height: $f_smallLineHeight;
+    }
+}
+
+@mixin font_itemDate {
+    font-family: $f_title;
+    font-weight: $f_reg;
+    font-size: $m_f_mediumDateSize;
+    line-height: $m_f_smallLineHeight;
+
+    @media screen and (min-width: 1220px){
+        font-size: $f_mediumDateSize;
+        line-height: $f_smallLineHeight;
+        
+    }
+}
+
+@mixin font_itemSmallTitle {
+    font-family: $f_title;
+    font-weight: $f_reg;
+    font-size: $m_f_smallTextSize;
+    line-height: $m_f_smallLineHeight;
+    
+    @media screen and (min-width: 1220px){
+        font-size: $f_smallTextSize;
+        line-height: $f_smallLineHeight;
+    }
+}
+
+@mixin font_itemPrice {
+    font-family: $f_title;
+    font-weight: $f_reg;
+    font-size: $m_f_largePriceSize;
+    line-height: $m_f_smallLineHeight;
+    
+    @media screen and (min-width: 1220px){
+        font-size: $f_largePriceSize;
+        line-height: $f_smallLineHeight;
+    }
+}
+
+@mixin font_itemImg {
+    font-family: $f_title;
+    font-weight: $f_sem;
+    font-size: $m_f_mediumImgSize;
+    line-height: $f_smallLineHeight;
+    
+    @media screen and (min-width: 1220px){
+        font-size: $f_mediumImgSize;
+        line-height: $f_smallLineHeight;
+    }
+}
+
+@mixin font_itemTime {
+    font-family: $f_title;
+    font-weight: $f_reg;
+    font-size: $m_f_smallTimeSize;
+    line-height: $f_smallLineHeight;
+    
+    @media screen and (min-width: 1220px){
+        font-size: $f_smallTimeSize;
+        line-height: $f_smallLineHeight;
+    }
+}
+
+@mixin afterWordFlow {
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/*! content img after */
+
+@mixin content_img-after {
+    content: $d_type;
+    position: absolute;
+    max-width: 115px;
+    max-height: 54px;
+    left: 0;
+    top: 47px;
+    padding: 9px 22px 6px 15px;
+    text-transform: uppercase;
+    background: $yellow;
+}
+@mixin content_img-change-after {
+    content: $d_type;
+    position: absolute;
+    word-break: break-all;
+    left: 0;
+    top: 0;
+    padding: 11px 32px 11px 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: $purple;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 12px;
+    color: $white;
+}
+@mixin content_img-change-after--desktop {
+    content: $d_type;
+    position: absolute;
+    max-width: 115px;
+    max-height: 54px;
+    left: 0;
+    top: 47px;
+    padding: 12px 37px 10px 35px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    background: $blue_bright;
+    color: $white;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
+
