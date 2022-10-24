@@ -49,10 +49,11 @@
         <div class="wrapper">
             <div class="main-content">
                 <div class="applicant">
-                    <h1 class="applicant__title">Applicant:<br>Andrey Golovachev</h1>
+                    <h1 class="applicant__title">Соискатель:<br>Andrey Golovachev</h1>
                     <div class="applicant__about">
                         <div class="applicant__shotrt">
-                            <p>Hello, my name is Andrey. I`m 29 year`s old</p>
+                            <p>Приветствую. Меня зовут Андрей, мне 29 лет.</p>
+                            <p>Ниже описаны ключевые навыки, которыми я владею на текущий момент времени.</p>
                         </div>
                         <ul class="applicant__skills-list">
                             <li class="applicant__item">
@@ -75,28 +76,72 @@
                     </div>
                 </div>
                 <div class="task">
+                    <p class="task__text">Ниже приведены описания и ссылки на предоставленные ранее задания:</p>
                     <div class="task__about">
                         <h2 class="task__title">Tasks time estimation</h2>
-                        <div class="task__description"></div>
+                        <div class="task__description">
+                            <p>Провести оценку собственных времени и сил после анализа предоставленныз заданий № 2 и № 3 по сложности и по времени.</p>
+                        </div>
+                        <div class="task__result">
+                            <p>Выполнено</p>
+                            <p>Оценка проведена. Срок выставлен на 21.10.2022. Было смещение срока до 24.10.22 по согласованию с HR.</p>
+                        </div>
                     </div>
                     <div class="task__layout">
                         <div class="task__layout-part1">
-                            <h2 class="task__title">Task: Вёрстка блока</h2>
-                            <div class="task__description"></div>
+                            <h3 class="task__title">Task: Вёрстка блока</h3>
+                            <div class="task__description">
+                                <p>Выполнить верстку по макету с учетом описания в статье:</p>
+                                <a href="https://github.com/Nevatrip/layout-test-task">Описание</a>
+                            </div>
+                            <div class="task__result">
+                                <p>Выполнено</p>
+                                <p>Для main контента Использовался принцип mobile-first, сам шаблон header и footer не учитывает данный принцип (так как используется на других страницах тасков), но адаптив и респонсив реализованы.</p>
+                                <p>Для построения использованы flex и grid, добавлены css анимации. Изображения ьыли подогнаны под оптимальный размер, отступы выставлены на усмотрение, расхождения с макетом присутствуют, но целостность интерфейса и дизайна соблюдена.</p>
+                            </div>
                         </div>
                         <div class="task__layout-part2">
-                            <h2 class="task__title">Task: Таблица на странице</h2>
-                            <div class="task__description"></div>
+                            <h3 class="task__title">Task: Таблица на странице</h3>
+                            <div class="task__description">
+                                <p>Исправить верстку. При мобильной версии появляется горизонтальный скролл.</p>
+                                <a href="https://codepen.io/kizoso/pen/VwpeeRY">Описание</a>
+                            </div>
+                            <div class="task__result">
+                                <p>Выполнено</p>
+                                <p>Решением является установка корректного "max-width" со значением "990px", так же установлен  перенос слов "word-break" со значением "break-word" для узлов "td" </p>
+                            </div>
                         </div>
                     </div>
                     <div class="task__js">
                         <div class="task__js-part1">
-                            <h2 class="task__title">Task: Билеты на событие</h2>
-                            <div class="task__description"></div>
+                            <h3 class="task__title">Task: Билеты на событие</h3>
+                            <div class="task__description">
+                                <a href="https://bitbucket.org/nevatrip/test-task/src/master/">Описание</a>
+                                <p>Предоставлен пример таблицы из phpMyAdmin. Указан ряд полей с описанием.</p>
+                                <p>Задачи:</p>
+                                <p>- показать итоговый вид таблицы с учетом дополнительных полей (тип билета).</p>
+                                <p>- показать итоговый вид таблицы с учетом дополнительных полей (при наличии уникальных баркодов у каждого билета, отобразить их в таблице).</p>
+                            </div>
+                            <div class="task__result">
+                                <p>Выполнено</p>
+                                <p>Задачу можно было решить разными способами, одним из которых является создание на хостинге соответствующей БД с последующим внесением в нее информации, а так же дальнейшее ее получение и преобразование в читаемый вид.</p>
+                                <p>Было использовано другое решение:</p>
+                                <p>Исходная таблица с частью данных, которые выбирает пользователь создана в html. Часть данных, которая должна быть сгенерирована на сторроне сервера, передана в объекты, таблица генерируется по данным, указаным пользователем после оформления заказа.</p>
+                                <p>Данные для сохранения записываются в Local storage, присутствует копка очистки "ls".</p>
+                                <p>Функционал скрытия баркодов не реализовывал, так как его отсутствие не противоречит условию первой задачи.</p>
+                            </div>
                         </div>
                         <div class="task__js-part2">
-                            <h2 class="task__title">Task: Время из A в B</h2>
-                            <div class="task__description"></div>
+                            <h3 class="task__title">Task: Время из A в B</h3>
+                            <div class="task__description">
+                                <p>Задача:</p>
+                                <p>Сделать страницу (дизайн не имеет значения) на которой пользователь выбрав направление, время и количество билетов сможет посчитать итоговые значения: общую стоимость, время в пути.</p>
+                                <a href="https://bitbucket.org/nevatrip/test-task/src/master/">Описание</a>
+                            </div>
+                            <div class="task__result">
+                                <p>Не выполнено</p>
+                                <p>Не хватило времени в установленный срок.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -109,11 +154,11 @@
                 <div class="social">
                     <ul class="social__list">
                         <li class="social__item">
-                            <a href="" class="social__link">
+                            <a href="https://github.com/moonzaki" class="social__link">
                                 <i class="fab fa-github"></i>Github</a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
+                            <a href="https://yaroslavl.hh.ru/resume/20b3c0c7ff09c7e6880039ed1f72474a396c35" class="social__link">
                                 <i class="fas fa-user-circle"></i>HeadHunter</a>
                         </li>
                         <!-- <li class="social__item">
@@ -130,6 +175,7 @@
             </div>
         </div>
     </footer>
+    <script src="../../pages/js/navigations.js"></script>
     <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/cc01339aab.js" crossorigin="anonymous"></script>
 </body>

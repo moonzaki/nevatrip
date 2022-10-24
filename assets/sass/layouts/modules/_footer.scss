@@ -1,9 +1,28 @@
 .footer {
-flex-grow: 0.5;
-
+    flex-grow: 0.5;
     background: $green_bg;
+}
 
-    .footer-content {
+.footer-content {
+    .social {
+        .social__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
 
+            padding:  0 20px 0 20px;
+            .social__item {
+                @include font_itemImg;
+                
+                .social__link {
+                    text-decoration: none;
+                    color: $milk_bg;
+                    i {
+                        margin: 0 9px 0 0;
+                    }
+                }
+            }
+        }
     }
 }

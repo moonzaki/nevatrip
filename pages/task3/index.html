@@ -3,11 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <title>Nevatest Task 3</title>
     <link rel="stylesheet" href="../../assets/sass/main.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="../../pages/main/index.html" class="navigation__link">
+                                <i class="far fa-circle"></i>First task</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">
+                                <i class="far fa-circle"></i>Second task</a>                                    
+                            <ul class="navigation__sublist">
+                                <li class="navigation__subitem">
+                                    <a href="../../pages/task2_1/index.html" class="navigation__sublink">
+                                        <i class="fas fa-chevron-circle-right"></i>Second task part 1</a>                                    
+                                </li>
+                                <li class="navigation__subitem">
+                                    <a href="../../pages/task2_2/index.html" class="navigation__sublink" target="_blank">
+                                        <i class="fas fa-chevron-circle-right"></i>Second task part 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link">
+                                <i class="far fa-circle"></i>Third task</a>
+                        </li>
+                    </ul>
+                    <div class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <div class="type">
+
+            </div>
+            <div class="development">
+                <table class="data-php">
+                    <thead>
+                        <tr>
+                            <th>Событие</th>
+                            <th>Дата и время</th>
+                            <th colspan="2">Стоимость</th>
+                            <th>Количество</th>
+                            <th>Баркод</th>
+                            <th>Сумма</th>
+                            <th>Заказ</th>
+                        </tr>
+                    </thead>
+                    <tbody class="development__item">
+                        <tr>
+                            <td rowspan="3" class="development__title">Поездка на автобусе</td>
+                            <td rowspan="3">
+                                <div class="development__date">
+                                    <p>01.10.2021 14:00:00</p>
+                                </div>
+                            </td>
+  
+                            <td class="type-class">
+                                <div class="adult-price-text">
+                                    <p class="types">Взрослый</p>
+                                </div>
+                            </td>
+                            <td class="adult-pblock">
+                                <div class="adult-price">
+                                    <p class="price">0</p>
+                                </div>
+                            </td>
+                            <td class="adult-qblock">
+                                <div class="adult-quantity">
+                                    <p class="quantity-all">0</p>
+                                    <button class="plus">+</button>
+                                    <button class="minus">-</button>
+                                </div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="development__barcode">
+                                    <p>11133322</p>
+                                </div>
+                            </td>
+                            <td rowspan="3" class="development__equal">
+                                <p class="development__equal-price">0</p>
+                            </td>
+
+                            <td rowspan="3">
+                                <div class="development__button">
+                                    <button>Добавить заказ</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="type-class">
+                                <div class="adult-price-text">
+                                    <p class="types">Детский</p>
+                                </div>
+                            </td>
+                            <td class="kid-pblock">
+                                <div class="kid-price">
+                                    <p class="price">0</p>
+                                </div>
+                            </td>
+                            <td class="kid-qblock">
+                                <div class="kid-quantity">
+                                    <p class="quantity-all">0</p>
+                                    <button class="plus">+</button>
+                                    <button class="minus">-</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="type-class">
+                                <select class="development__type">
+                                    <option>Не указан</option>
+                                    <option>Льготный</option>
+                                    <option>Групповой</option>
+                                </select>
+                            </td>
+                            <td class="type-tprice">
+                                <div class="type-ticket-price">
+                                    <p class="price">0</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="type-ticket-quantity">
+                                    <p class="quantity-all">0</p>
+                                    <button class="plus">+</button>
+                                    <button class="minus">-</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="development__item">
+                        <tr>
+                            <td rowspan="3" class="development__title">Поездка на пароме</td>
+                            <td rowspan="3">
+                                <div class="development__date">
+                                    <p>11.10.2021 15:38:00</p>
+                                </div>
+                            </td>
+  
+                            <td class="type-class">
+                                <div class="adult-price-text">
+                                    <p class="types">Взрослый</p>
+                                </div>
+                            </td>
+                            <td class="adult-pblock">
+                                <div class="adult-price">
+                                    <p class="price">0</p>
+                                </div>
+                            </td>
+                            <td class="adult-qblock">
+                                <div class="adult-quantity">
+                                    <p class="quantity-all">0</p>
+                                    <button class="plus">+</button>
+                                    <button class="minus">-</button>
+                                </div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="development__barcode">
+                                    <p>66677788</p>
+                                </div>
+                            </td>
+                            <td rowspan="3" class="development__equal">
+                                <p class="development__equal-price">0</p>
+                            </td>
+
+                            <td rowspan="3">
+                                <div class="development__button">
+                                    <button>Добавить заказ</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="type-class">
+                                <div class="adult-price-text">
+                                    <p class="types">Детский</p>
+                                </div>
+                            </td>
+                            <td class="kid-pblock">
+                                <div class="kid-price">
+                                    <p class="price">0</p>
+                                </div>
+                            </td>
+                            <td class="kid-qblock">
+                                <div class="kid-quantity">
+                                    <p class="quantity-all">0</p>
+                                    <button class="plus">+</button>
+                                    <button class="minus">-</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="type-class">
+                                <select class="development__type">
+                                    <option>Не указан</option>
+                                    <option>Льготный</option>
+                                    <option>Групповой</option>
+                                </select>
+                            </td>
+                            <td class="type-tprice">
+                                <div class="type-ticket-price">
+                                    <p class="price">0</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="type-ticket-quantity">
+                                    <p class="quantity-all">0</p>
+                                    <button class="plus">+</button>
+                                    <button class="minus">-</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="development__item">
+                        <tr>
+                            <td rowspan="3" class="development__title">Поездка на яхте</td>
+                            <td rowspan="3">
+                                <div class="development__date">
+                                    <p>16.10.2021 11:38:00</p>
+                                </div>
+                            </td>
+  
+                            <td class="type-class">
+                                <div class="adult-price-text">
+                                    <p class="types">Взрослый</p>
+                                </div>
+                            </td>
+                            <td class="adult-pblock">
+                                <div class="adult-price">
+                                    <p class="price">0</p>
+                                </div>
+                            </td>
+                            <td class="adult-qblock">
+                                <div class="adult-quantity">
+                                    <p class="quantity-all">0</p>
+                                    <button class="plus">+</button>
+                                    <button class="minus">-</button>
+                                </div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="development__barcode">
+                                    <p>77799987</p>
+                                </div>
+                            </td>
+                            <td rowspan="3" class="development__equal">
+                                <p class="development__equal-price">0</p>
+                            </td>
+
+                            <td rowspan="3">
+                                <div class="development__button">
+                                    <button>Добавить заказ</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="type-class">
+                                <div class="adult-price-text">
+                                    <p class="types">Детский</p>
+                                </div>
+                            </td>
+                            <td class="kid-pblock">
+                                <div class="kid-price">
+                                    <p class="price">0</p>
+                                </div>
+                            </td>
+                            <td class="kid-qblock">
+                                <div class="kid-quantity">
+                                    <p class="quantity-all">0</p>
+                                    <button class="plus">+</button>
+                                    <button class="minus">-</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="type-class">
+                                <select class="development__type">
+                                    <option>Не указан</option>
+                                    <option>Льготный</option>
+                                    <option>Групповой</option>
+                                </select>
+                            </td>
+                            <td class="type-tprice">
+                                <div class="type-ticket-price">
+                                    <p class="price">0</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="type-ticket-quantity">
+                                    <p class="quantity-all">0</p>
+                                    <button class="plus">+</button>
+                                    <button class="minus">-</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="clear-ls">Clear local storage</button>
+            <div class="table-content">
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-content">
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="" class="social__link">
+                                <i class="fab fa-github"></i>Github</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link">
+                                <i class="fas fa-user-circle"></i>HeadHunter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="author">
+                    <a href="" class="author__link"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../pages/js/navigations.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/cc01339aab.js" crossorigin="anonymous"></script>
 </body>
 </html>
