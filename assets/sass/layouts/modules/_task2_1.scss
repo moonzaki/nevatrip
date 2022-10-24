@@ -1,7 +1,8 @@
 .content {
     max-width: 1440px;
     background: $white;
-    padding: 27px 18px 27px 18px;
+    margin: 0;
+    height: 100%;
 }
 
 .content__list {
@@ -10,6 +11,8 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 30px;
+    margin: 0 18px 0 18px;
+    padding: 27px 0 27px 0;
 
     @media screen and (min-width: 720px) {
         gap: 60px;
@@ -65,6 +68,11 @@
                 padding: 12px 37px 10px 35px;
             }
         }
+        
+    }
+
+    .no--after {
+        @include no_after;
     }
 
     .content__description {
@@ -201,6 +209,8 @@
         color: $blue_hover;
     }
 }
+
+
 
 .close--item {
     width: 63px;
@@ -405,47 +415,9 @@
     }
 }
 
-
-
 .no--after {
-    display: block;
-    position: relative;
-    width: 100%;
-    min-width: 341px;
-    max-width: 473px;
-    line-height: 0;
-    margin: 0 auto;
-
-    overflow: hidden;
-    transition:  0.5s;
-
-    @media screen and (max-width: 719px) {
-        min-width: 341px;
-        max-width: 473px;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    &:after {
-        content: none;
-        position: absolute;
-        width: 102px;
-        height: 31px;
-        left: 0;
-        top: 0;
-        padding: 11px 0 0 25px;
-        @include font_itemImg;
-        font-size: 14px;
-        text-transform: uppercase;
-        background: $gray_dark;
-        border-top-left-radius: 15px;
-        border-bottom-right-radius: 12px;
-        color: $white;
-        @include afterWordFlow;
-    }
+    @include no_after;
 }
+
+
 

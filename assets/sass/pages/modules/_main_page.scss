@@ -2,5 +2,35 @@
     margin: 0;
 }
 .applicant__title {
-    margin: 100px;
+    margin: 100px 0 100px 0;
+    @include font_itemTitle;
 }
+
+.applicant__about {
+    padding: 25px 0 25px 0;
+}
+
+.applicant__shotrt,
+.task__text,
+.task  {
+    @include font_itemText;
+}
+
+.applicant__skills-list {
+    list-style: none;
+    margin: 0 0 20px 0;
+}
+
+.applicant__item {
+    margin: 15px;
+    @include font_itemText;
+
+    i {
+        margin: 0 10px 0 0;
+    }
+}
+
+.task__title {
+    @include font_itemTitle;
+}
+
